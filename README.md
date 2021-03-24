@@ -20,7 +20,7 @@ Enjoy the view!
 
 Run command:
 ```
-bin/magento module:disable Testa_Blog  
+bin/magento module:uninstall Testa_Blog  
 ```
 To clean up the database, run the following queries on your database:
 ```
