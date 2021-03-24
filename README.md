@@ -1,14 +1,24 @@
-Entwickler Dokumentation:
-To install this module via composer you need to execute the following commands in you root directory.
+**Install Module**
+
+To install this module via composer you need to execute the following commands in you root directory:
 
 ```
-composer config repositories.testa github https://github.com/icecream-testa/blog_netz98.git
-composer require icecream-testa/blog_netz98:dev-main
+composer config repositories.testa github https://github.com/icecream-testa/dev-blog.git
+composer require icecream-testa/dev-blog:dev-master
 bin/magento setup:upgrade
 ```
 
-Uninstall Module
-To clean out the database run the following queries
+**How to use**
+
+Visit your local project and add the following URL-Key to the base URL:
+```
+/devblog
+```
+Enjoy the view!
+
+**Uninstall Module**
+
+To clean up the database, run the following queries on your database:
 ```
 DELETE FROM setup_module WHERE module = 'Testa_Blog'; 
 DELETE FROM cms_page WHERE identifier = 'devblog'; 
