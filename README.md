@@ -14,10 +14,14 @@ Visit your local project and add the following URL-Key to the base URL:
 ```
 /devblog
 ```
-Enjoy the view!
+Enjoy the view! 
 
 **Uninstall Module**
 
+Run command:
+```
+bin/magento module:disable Testa_Blog  
+```
 To clean up the database, run the following queries on your database:
 ```
 DELETE FROM setup_module WHERE module = 'Testa_Blog'; 
